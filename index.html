@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0618">
+  <title>Happy Birthday ✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="confetti"></canvas>
+  <div class="stars"></div>
+
+  <header class="topbar">
+    <div class="logo">✦ BIRTHDAY <span>MAGIC</span></div>
+    <button class="music-btn" id="musicBtn" aria-label="Toggle birthday music">♫ <span>Music</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="glow"></div>
+
+      <div class="balloon b1"><i></i></div>
+      <div class="balloon b2"><i></i></div>
+      <div class="balloon b3"><i></i></div>
+      <div class="balloon b4"><i></i></div>
+      <div class="balloon b5"><i></i></div>
+
+      <div class="hero-content">
+        <p class="eyebrow">A little celebration made with love</p>
+        <h1>Happy<br><em>Birthday Madhurima!</em></h1>
+        <div class="countdown" id="countdown" aria-label="Countdown to Madhurima's birthday">
+          <div><strong id="days">00</strong><span>Days</span></div>
+          <div><strong id="hours">00</strong><span>Hours</span></div>
+          <div><strong id="minutes">00</strong><span>Minutes</span></div>
+          <div><strong id="seconds">00</strong><span>Seconds</span></div>
+        </div>
+        <p class="birthday-status" id="birthdayStatus">Counting down to October 20, 2026 🎂</p>
+        <p class="subtitle">Today is all about you. Make a wish, enjoy every moment, and let the good memories begin. ✨</p>
+        <button class="primary" id="surpriseBtn">Open Your Surprise <span>→</span></button>
+        <div class="scroll-note">SCROLL TO DISCOVER <b>↓</b></div>
+      </div>
+    </section>
+
+    <section class="message section">
+      <div class="section-label">01 — A MESSAGE FOR YOU</div>
+      <div class="message-card">
+        <div class="quote">“</div>
+        <h2>For Madhurima.<br><span>Another beautiful chapter.</span></h2>
+        <p>
+          May your days be filled with genuine smiles, unexpected adventures,
+          people who make you feel loved, and dreams that slowly become real.
+          Keep shining, keep growing, and never forget how special you are.
+        </p>
+        <div class="signature">With lots of love <span>♥</span></div>
+      </div>
+    </section>
+
+    <section class="gallery section">
+      <div class="section-label">02 — LITTLE MOMENTS</div>
+      <div class="section-heading">
+        <h2>Memories worth<br><em>keeping.</em></h2>
+        <p>Replace the sample images with your favorite photos.</p>
+      </div>
+
+      <div class="photo-grid">
+        <figure class="photo-card tall">
+          <img src="images/photo1.jpg" alt="Birthday memory 1" onerror="this.src='https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=900&q=85'">
+          <figcaption>Good times ✨</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="images/photo2.jpg" alt="Birthday memory 2" onerror="this.src='https://images.unsplash.com/photo-1464349153735-7db50ed83c84?auto=format&fit=crop&w=900&q=85'">
+          <figcaption>Sweet memories</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="images/photo3.jpg" alt="Birthday memory 3" onerror="this.src='https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=900&q=85'">
+          <figcaption>Celebrate everything</figcaption>
+        </figure>
+        <figure class="photo-card wide">
+          <img src="images/photo4.jpg" alt="Birthday memory 4" onerror="this.src='https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=1200&q=85'">
+          <figcaption>Moments that matter</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="wish section">
+      <div class="wish-orbit">✦</div>
+      <div class="section-label">03 — MAKE A WISH</div>
+      <h2>Close your eyes.<br><em>Think of something wonderful.</em></h2>
+      <p>One wish. One beautiful new beginning.</p>
+      <button class="primary" id="wishBtn">Make a Wish ✨</button>
+    </section>
+
+    <footer>
+      <div>MADE WITH <span>♥</span> FOR MADHURIMA</div>
+      <div class="year">2026</div>
+    </footer>
+  </main>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="close" id="closeBtn">×</button>
+      <div class="modal-sparkle">✦</div>
+      <p class="eyebrow">YOUR SURPRISE</p>
+      <h2>Happy Birthday,<br><em>Madhurima! ❤️</em></h2>
+      <p class="modal-text">May this year bring you closer to everything you've been wishing for. Keep smiling, keep shining, and enjoy your special day, Madhurima! 🎂✨</p>
+      <div class="cake">🎂</div>
+      <button class="primary" id="modalCelebrate">CELEBRATE! 🎉</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">✨ Wish sent into the universe!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
